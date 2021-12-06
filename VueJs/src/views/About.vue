@@ -2,13 +2,8 @@
   <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="about-img">
-            <img src="../assets/img/about.jpg" alt="Image" />
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="about-content">
+        <div class="col-lg-12 row">
+          <div class="container">
             <div class="section-header text-left">
               <h2>About Me</h2>
             </div>
@@ -42,7 +37,6 @@
                 <base-progress :key="2"  color="blue" :percentage="30" class="mx-2 mb-2"></base-progress>
               </div>
             </div>
-            <a class="btn" href="">Learn More</a>
           </div>
         </div>
       </div>
@@ -78,10 +72,15 @@ export default {
 </script>
 
 <style>
+.about-content {
+  padding-top: 50px !important;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
-}</style>
+}
+</style>
+
