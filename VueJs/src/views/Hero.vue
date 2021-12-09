@@ -33,6 +33,8 @@ const $ = jQuery;
 import Typed from "typed.js";
 
 export default {
+ name: 'Hero',
+
   mounted() {
     // Typed Initiate
     if ($(".hero .hero-text h2").length == 1) {
@@ -49,4 +51,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.hero {
+  width: 100%;
+}
+</style>

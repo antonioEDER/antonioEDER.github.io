@@ -1,31 +1,26 @@
 <template>
-  <!-- Footer Start -->
+  <div>
+    <!-- Footer Start -->
   <footer class="footer wow fadeIn" data-wow-delay="0.3s">
     <div class="container-fluid footer">
       <div class="container">
         <div class="footer-info">
-          <h2>Kate Winslet</h2>
-          <h3>123 Street, New York, USA</h3>
+          <h2>Eder Antonio</h2>
+          <h3>Rolim de Moura - RO Brazil</h3>
           <div class="footer-menu">
-            <p>+012 345 67890</p>
-            <p>info@example.com</p>
+            <p>+55 069 98479-3758</p>
+            <p>antonioeder007@gmail.com</p>
           </div>
           <div class="footer-social">
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a target="blank" href="https://www.facebook.com/Ederantonio1993/"><i class="fab fa-facebook-f"></i></a>
+            <a target="blank" href="https://www.instagram.com/eder_antoniio/"><i class="fab fa-instagram"></i></a>
+            <a target="blank" href="https://www.linkedin.com/in/eder-antonio-3b7021122/"><i class="fab fa-linkedin-in"></i></a>
+            <a target="blank" href="https://github.com/antonioEDER"><i class="fab fa-github"></i></a>
           </div>
         </div>
       </div>
       <div class="container copyright">
-        <p>
-          &copy; <a href="#">Your Site Name</a>, All Right Reserved |
-
-          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-          Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-        </p>
+        <p></p>
       </div>
     </div>
   </footer>
@@ -37,6 +32,7 @@
   <!-- Pre Loader -->
   <div id="loader" class="show">
     <div class="loader"></div>
+  </div>
   </div>
 </template>
 

@@ -60,5 +60,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+ name: 'Services',
+
+};
 </script>
+<style scoped>
+.service {
+  margin-top: 30px;
+}
+</style>

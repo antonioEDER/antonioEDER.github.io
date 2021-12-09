@@ -1,5 +1,5 @@
 {
-  "name": "game-questions",
+  "name": "dev-folio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -33,6 +33,7 @@
     "typed.js": "^2.0.12",
     "vue": "^3.0.0",
     "vue-axios": "^3.2.4",
+    "vue-router": "^4.0.12",
     "vue-waypoint": "^4.2.1",
     "vuejs-progress-bar": "^1.2.7",
     "vuex": "^4.0.0-0",

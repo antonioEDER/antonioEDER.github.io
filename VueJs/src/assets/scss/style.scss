@@ -481,7 +481,7 @@ a:focus {
 .about {
   position: relative;
   width: 100%;
-  margin: 45px 0 45px 0;
+  margin: 45px 0 0 0;
 }
 
 .about .col-lg-6 {
@@ -1518,13 +1518,22 @@ border-color: transparent #dddddd transparent transparent;
   border: none;
 }
 
-.footer .footer-social {
+.footer-social {
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.footer  {
   position: relative;
   margin-top: 15px;
 }
 
 .footer .footer-social a {
   display: inline-block;
+  color: #ffffff;
 }
 
 .footer .footer-social a i {

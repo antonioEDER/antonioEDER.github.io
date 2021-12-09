@@ -1,32 +1,25 @@
 <template>
   <!-- Nav Bar Start -->
   <header class="navbar navbar-expand-lg bg-light navbar-light">
-    <div class="container-fluid header" @click="focusBtn">
+    <div class="container-fluid header">
       <a href="/" class="navbar-brand">DevFolio</a>
-      <button
-        type="button"
+      <div
         class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
       >
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </div>
 
       <div
         class="collapse navbar-collapse justify-content-between"
         id="navbarCollapse"
       >
         <div class="navbar-nav ml-auto">
-          <a href="#home" class="nav-item nav-link active">Home</a>
-          <a href="#about" class="nav-item nav-link">About</a>
-          <a href="#service" class="nav-item nav-link">Service</a>
-          <a href="#experience" class="nav-item nav-link">Experience</a>
-          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-          <a href="#price" class="nav-item nav-link">Price</a>
-          <a href="#review" class="nav-item nav-link">Review</a>
-          <a href="#team" class="nav-item nav-link">Team</a>
-          <a href="#blog" class="nav-item nav-link">Blog</a>
-          <a href="#contact" class="nav-item nav-link">Contact</a>
+          <a  :class="link === '/' ? 'active' : ''" href="/" class=" nav-item nav-link">Home</a>
+          <a  :class="link === '/about' ? 'active' : '' " href="/about" class=" nav-item nav-link">About</a>
+          <a  :class="link === '/service' ? 'active' : '' " href="/service" class=" nav-item nav-link">What I do</a>
+          <a  :class="link === '/experience' ? 'active' : '' " href="/experience" class=" nav-item nav-link">Experience</a>
+          <a  :class="link === '/portfolio' ? 'active' : '' " href="/portfolio" class=" nav-item nav-link">Portfolio</a>
+          <a  :class="link === '/courses' ? 'active' : '' " href="/courses" class=" nav-item nav-link">My Courses</a>
         </div>
       </div>
     </div>
@@ -35,31 +28,20 @@
 </template>
 
 <script>
-import jQuery from 'jquery';
-const $ = jQuery
-
 export default {
   name: 'Header',
-  methods: {
-    focusBtn () {
-       // Smooth scrolling on the navbar links
-      $(".navbar-nav a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 45
-            }, 1500, 'easeInOutExpo');
-                console.log("$(this).parents('.navbar-nav')", )
-            if ($(this).parents('.navbar-nav').length) {
-                $('.navbar-nav .active').removeClass('active');
-                $(this).closest('a').addClass('active');
-            }
-        }
-    });
-    }
-  }
+ computed: {
+   link: {
+      get () {
+        return this.$route.path
+      }
+    },
+ }
 };
 </script>
 
-<style></style>
+<style>
+.active {
+  color: rgb(7, 34, 63) !important;
+}
+ </style>

@@ -2,7 +2,9 @@
 
    <div>
      <Header />
-     <Home />
+      <div class="router-view">
+        <router-view />
+      </div>
      <Footer />
    </div>
 
@@ -10,7 +12,6 @@
 
 <script>
 import Header from '@/components/Header.vue'
-import Home from '@/views/Home.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
@@ -21,10 +22,15 @@ export default {
   },
   components: {
     Header,
-    Home,
     Footer
   }
 }
 
 </script>
 
+<style scoped>
+.router-view {
+  min-height: 800px;
+
+}
+</style>

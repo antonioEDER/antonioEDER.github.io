@@ -82,5 +82,6 @@ export default {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+
 </style>
 
