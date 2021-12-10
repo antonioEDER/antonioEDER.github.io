@@ -1,10 +1,8 @@
 <template>
 
    <div>
-     <Header />
-      <div class="router-view">
-        <router-view />
-      </div>
+      <Header />
+     <Home />
      <Footer />
    </div>
 
@@ -12,6 +10,7 @@
 
 <script>
 import Header from '@/components/Header.vue'
+import Home from '@/views/Home.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
@@ -22,6 +21,7 @@ export default {
   },
   components: {
     Header,
+    Home,
     Footer
   }
 }

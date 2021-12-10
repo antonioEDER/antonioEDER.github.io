@@ -2,46 +2,48 @@
   <!-- Nav Bar Start -->
   <header class="navbar navbar-expand-lg bg-light navbar-light">
     <div class="container-fluid header">
-      <a href="/" class="navbar-brand">DevFolio</a>
-      <div
+      <a :class="link === '/' ? 'active' : ''" href="/" class="navbar-brand">DevFolio</a>
+      <button
+        type="button"
         class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
       >
         <span class="navbar-toggler-icon"></span>
-      </div>
+      </button>
 
       <div
         class="collapse navbar-collapse justify-content-between"
         id="navbarCollapse"
       >
         <div class="navbar-nav ml-auto">
-          <a  :class="link === '/' ? 'active' : ''" href="/" class=" nav-item nav-link">Home</a>
-          <a  :class="link === '/about' ? 'active' : '' " href="/about" class=" nav-item nav-link">About</a>
-          <a  :class="link === '/service' ? 'active' : '' " href="/service" class=" nav-item nav-link">What I do</a>
-          <a  :class="link === '/experience' ? 'active' : '' " href="/experience" class=" nav-item nav-link">Experience</a>
-          <a  :class="link === '/portfolio' ? 'active' : '' " href="/portfolio" class=" nav-item nav-link">Portfolio</a>
-          <a  :class="link === '/courses' ? 'active' : '' " href="/courses" class=" nav-item nav-link">My Courses</a>
+          <a :class="link === '/' ? 'active' : '#home'" href="#home" class="nav-item nav-link active">Home</a>
+          <a :class="link === '/' ? 'active' : '#about'" href="#about" class="nav-item nav-link">About</a>
+          <a :class="link === '/' ? 'active' : '#service'" href="#service" class="nav-item nav-link">Service</a>
+          <a :class="link === '/' ? 'active' : '#experience'" href="#experience" class="nav-item nav-link">Experience</a>
+          <a :class="link === '/' ? 'active' : '#portfolio'" href="#portfolio" class="nav-item nav-link">Portfolio</a>
+          <a :class="link === '/' ? 'active' : '#courses'" href="#courses" class="nav-item nav-link">Courses</a>
         </div>
       </div>
     </div>
   </header>
-  <!-- Nav Bar End -->
 </template>
 
 <script>
+
 export default {
   name: 'Header',
- computed: {
+   computed: {
    link: {
       get () {
         return this.$route.path
       }
     },
- }
+ },
+  methods: {
+   
+  }
 };
 </script>
 
-<style>
-.active {
-  color: rgb(7, 34, 63) !important;
-}
- </style>
+<style></style>
