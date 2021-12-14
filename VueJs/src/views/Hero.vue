@@ -12,9 +12,6 @@
                 Web Developer, Front-End Developer, Apps Developer
               </div>
             </div>
-            <div class="hero-btn">
-              <a class="btn" href="/#contact">Contact Me</a>
-            </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 d-none d-md-block">

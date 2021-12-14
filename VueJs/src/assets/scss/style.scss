@@ -1604,4 +1604,7 @@ border-color: transparent #dddddd transparent transparent;
       line-height: 16px;
       padding: 0 5px;
   }
+  .container-fluid.header {
+    justify-items: center !important;
+  }
 }

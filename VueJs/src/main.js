@@ -6,7 +6,6 @@ import VueAxios from 'vue-axios'
 import router from "./router";
 
 import "@/assets/scss/style.scss";
-import "@/assets/js/main.js";
 
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -16,6 +15,8 @@ import 'animate'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
+
+import "@/assets/js/main.js";
 
 createApp(App)
 .use(store)
