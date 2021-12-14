@@ -3,16 +3,21 @@
   <header class="navbar navbar-expand-lg bg-light navbar-light">
     <div class="container-fluid header">
       <a :class="link === '/' ? 'active' : ''" href="/" class="navbar-brand"
-        >DevFolio</a
-      >
+        >DevFolio</a>
       <button
-        class="navbar-toggler"
-        type="button"
         v-on:click="open()"
+        v-if="isOpen"
+        class="navbar-toggler"
       >
-        <span class="navbar-toggler-icon"></span>
+      <span class="fas fa-times-circle"></span>
       </button>
-
+      <button
+        v-on:click="open()"
+        v-else 
+        class="navbar-toggler"
+      >
+      <span class="fas fa-bars"></span>
+      </button>
       <div
         class="collapse navbar-collapse justify-content-between"
         id="navbarCollapse"
