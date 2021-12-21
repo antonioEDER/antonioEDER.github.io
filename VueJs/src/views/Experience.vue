@@ -16,10 +16,10 @@
               <h2>Web Developer</h2>
               <h4>EUCATUR - Empresa União Cascavel de Transportes e Turismo, JiParaná - RO</h4>
                 <p>‑ Desenvolver Front‑End dos sites da empresa.</p>
-                <p>‑ Gerar App Android e IOS Híbrido usando Cordova.</p>
-                <p>‑ Seguir Padrão do Layout criado pelo UX e UI. </p>
-                <p>‑ Integrar front as apis‑rest. </p>
-                <p>‑ Treinar novos desenvolvedores front‑end com padrões de escrita e cultura do departamento.</p>
+                <p>‑ Gerar App Android e IOS Híbrido usando CordovaJs/CapacitorJs.</p>
+                <p>‑ Seguir Padrões dos Layouts criado pelo UX e UI. </p>
+                <p>‑ Integrar front-end as APIS-REST. </p>
+                <p>‑ Treinar novos desenvolvedores Front‑End com padrões de escrita e cultura do empresa.</p>
             </div>
           </div>
           <div
