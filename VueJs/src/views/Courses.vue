@@ -43,6 +43,10 @@ export default {
     return {
       list: [
         {
+          course: 'ES6/7 / Webpack 2 / TypeScript',
+          img: require('@/assets/img/courses/ts-01.jpg')
+        },
+        {
           course: 'Vuejs 3, Vuex e Vue Router',
           img: require('@/assets/img/courses/1.jpg')
         },
