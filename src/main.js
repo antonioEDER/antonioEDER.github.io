@@ -18,9 +18,11 @@ import '@fortawesome/fontawesome-free/js/all.js'
 
 import "@/assets/js/main.js";
 
-createApp(App)
-.use(store)
-.use(router)
-.use(VueAxios, axios)
-.mount('#app');
+const app = createApp(App)
+
+app.use(store)
+app.use(VueAxios, axios)
+app.use(router)
+app.mount('#app')
+
 
