@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
-  "productName": "Meu Portfóliop",
+  "productName": "Meu Portfólio",
   "author": "Eder Antonio <ederantonio@eucatur.com.br>",
   "private": true,
   "scripts": {
