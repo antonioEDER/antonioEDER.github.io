@@ -11,7 +11,7 @@
             <p>+55 069 98479-3758</p>
             <p>antonioeder007@gmail.com</p>
           </div>
-          <div>Atualizado em 02/02/2022</div>
+          <p class="text-white">Atualizado em 02/02/2022</p>
           <div class="footer-social">
             <a target="blank" href="https://www.facebook.com/Ederantonio1993/"><i class="fab fa-facebook-f"></i></a>
             <a target="blank" href="https://www.instagram.com/eder_antoniio/"><i class="fab fa-instagram"></i></a>
