@@ -1,40 +1,39 @@
-# antonioeder.gihub.io
-```
-Esse projeto é meu Portfólio.
-```
-[![N|Solid](https://assets.codepen.io/t-1003/internal/avatars/teams/default.png?fit=crop&format=auto&height=150&version=1513627136&width=150)]
+# Quasar App (portfolio)
 
-## Inspiração de Layout
+A Quasar Framework app
 
-```
-HTML Codex https://htmlcodex.com/demo/?item=1011
+## Install the dependencies
 
-Me inspirei nesse layout  gratuito. Só aproveitei o UX/UI dele. Eu refatorei tudo para VueJS e mudei algumas coisa para se adaptar a minha realidade.
+```bash
+yarn
 ```
 
-## Project setup
-```
-yarn install
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
+
+```bash
+quasar dev
 ```
 
-```
-yarn serve
-```
+### Lint the files
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
+```bash
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Format the files
+
+```bash
+yarn format
+```
+
+### Build the app for production
+
+```bash
+quasar build
+```
+
+### Customize the configuration
+
+See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+
+http://tokyovue.ibthemespro.com/home-dark

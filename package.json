@@ -1,76 +1,49 @@
 {
-  "name": "dev-folio",
-  "version": "0.1.0",
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "productName": "Meu Portfóliop",
+  "author": "Eder Antonio <ederantonio@eucatur.com.br>",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev -m spa",
+    "build": "quasar build -m spa"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@popperjs/core": "^2.11.0",
-    "animate": "^1.0.0",
+    "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
-    "bootstrap": "^5.1.3",
-    "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
-    "easing": "^1.2.1",
-    "isotope": "^1.0.0-alpha.3",
-    "jquery": "^3.6.0",
-    "jquery-waypoints": "^2.0.5",
-    "jquery.easing": "^1.4.1",
-    "jquery.transit": "^0.9.12",
-    "lightbox": "^0.5.0",
-    "masonry-layout": "^4.2.2",
-    "mousetrap": "^1.6.5",
-    "owl.carousel": "^2.3.4",
-    "owlcarousel": "^1.3.3",
-    "progress-it": "^1.1.1",
-    "quasar": "^2.5.1",
-    "typed": "^1.3.0",
-    "typed.js": "^2.0.12",
+    "quasar": "^2.0.0",
     "vue": "^3.0.0",
-    "vue-axios": "^3.2.4",
-    "vue-router": "^4.0.12",
-    "vue-waypoint": "^4.2.1",
-    "vuejs-progress-bar": "^1.2.7",
-    "vuex": "^4.0.0-0",
-    "waypoints": "^4.0.1",
-    "wow": "^0.0.6",
-    "wowjs": "^1.1.3"
+    "vue-router": "^4.0.0",
+    "vuex": "^4.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app": "^3.0.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+    "eslint-webpack-plugin": "^2.4.0",
+    "prettier": "^2.5.1"
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
 }

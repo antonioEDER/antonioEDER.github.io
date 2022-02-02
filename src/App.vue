@@ -1,36 +1,17 @@
 <template>
-
-   <div>
-      <Header />
-     <Home />
-     <Footer />
-   </div>
-
+  <router-view />
 </template>
-
 <script>
-import Header from '@/components/Header.vue'
-import Home from '@/views/Home.vue'
-import Footer from '@/components/Footer.vue'
-
-export default {
-  name: 'App',
-  data() {
-    return {
-      text: undefined,}
+import { useMeta } from 'quasar'
+import { defineComponent } from "vue";
+const metaData = {
+  title: 'Meu Portfólio',
+  titleTemplate: title => `${title} - Eder Antonio`,
+}
+export default defineComponent({
+  name: "App",
+  setup () {
+    useMeta(metaData)
   },
-  components: {
-    Header,
-    Home,
-    Footer
-  }
-}
-
+});
 </script>
-
-<style scoped>
-.router-view {
-  min-height: 800px;
-
-}
-</style>
