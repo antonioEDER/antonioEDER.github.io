@@ -4,23 +4,25 @@
       <h2 class="text-white text-bold">Meus videos</h2>
       <div class="text-white q-mb-lg">My videos</div>
     </div>
-    <div v-for="(v, index) in videos" :key="index" class="videos">
-      <q-card class="my-card">
-        <q-video :ratio="16 / 9" w :src="v.url" />
-        <q-card-section>
-          <div class="text-h6 text-black">{{ v.name }}</div>
-          <div class="text-subtitle2 text-black">{{ v.name_english }}</div>
-        </q-card-section>
+    <div class="videos">
+      <div v-for="(v, index) in videos" :key="index">
+        <q-card class="my-card">
+          <q-video :ratio="16 / 9" w :src="v.url" />
+          <q-card-section>
+            <div class="text-h6 text-black">{{ v.name }}</div>
+            <div class="text-subtitle2 text-black">{{ v.name_english }}</div>
+          </q-card-section>
 
-        <q-card-section class="q-pt-none text-black">
-          <div class="text-black q-mb-md">
-            {{ v.descript }}
-          </div>
-          <div class="text-black text-bold">
-            {{ v.descript_english }}
-          </div>
-        </q-card-section>
-      </q-card>
+          <q-card-section class="q-pt-none text-black">
+            <div class="text-black q-mb-md">
+              {{ v.descript }}
+            </div>
+            <div class="text-black text-bold">
+              {{ v.descript_english }}
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +32,15 @@ export default {
   data() {
     return {
       videos: [
+        {
+          url: "https://www.youtube.com/embed/RgL24KAOuzE",
+          name: "#Resumão 01 - Criando um DevFolio com GitHub Pages",
+          name_english: "Creating a DevFolio with GitHub Pages",
+          descript:
+            "Um resumão para você  ter  inspiração de criar um seu DevFolio com GitHub Pages. No vídeo eu indico alguns frameworks e plataformas para enriquecer o seus conhecimentos.",
+          descript_english:
+            "A summary to get you inspired to create your own DevFolio with GitHub Pages. In the video I indicate some frameworks and platforms to enrich your knowledge.",
+        },
         {
           url: "https://www.youtube.com/embed/MkgLF6Vhsjg",
           name: "Meu discurso de colação de grau",
@@ -53,6 +64,7 @@ export default {
 .videos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
   @media only screen and (max-width: 1200px) {
     grid-template-columns: 1fr;
   }
