@@ -13,10 +13,10 @@
         </q-card-section>
 
         <q-card-section class="q-pt-none text-black">
-          <div class="text-title text-black q-mb-md">
+          <div class="text-black q-mb-md">
             {{ v.descript }}
           </div>
-          <div class="text-subtitle2 text-black">
+          <div class="text-black text-bold">
             {{ v.descript_english }}
           </div>
         </q-card-section>
