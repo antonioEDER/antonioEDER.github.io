@@ -1,36 +1,33 @@
 <template>
   <div class="portfolio" id="courses">
-     <div class="container">
+    <div class="container">
+      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <h2 class="text-bold">Meus certificados</h2>
+        <div>My courses</div>
+      </div>
+      <div class="row portfolio-container">
         <div
-          class="section-header text-center wow zoomIn"
-          data-wow-delay="0.1s"
+          class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
+          data-wow-delay="0.0s"
+          v-for="(l, i) in list"
+          :key="i"
         >
-          <h2>Meus certificados</h2>
-          <div>My courses</div>
-        </div>
-        <div class="row portfolio-container">
-          <div
-            class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp"
-            data-wow-delay="0.0s"
-            v-for="(l, i) in list"
-            :key="i"
-          >
-            <div class="portfolio-wrap">
-              <div class="portfolio-img">
-                <img :src="l.img" alt="Image" />
-              </div>
-              <div class="portfolio-text">
-                <h3>{{ l.course}}</h3>
-                <a
-                  class="btn"
-                  :href="l.img"
-                  target="new"
-                  data-lightbox="portfolio"
-                  >+</a
-                >
-              </div>
+          <div class="portfolio-wrap">
+            <div class="portfolio-img">
+              <q-img :src="l.img" alt="Image" />
+            </div>
+            <div class="portfolio-text">
+              <h3>{{ l.course }}</h3>
+              <a
+                class="btn"
+                :href="l.img"
+                target="new"
+                data-lightbox="portfolio"
+                >+</a
+              >
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -38,77 +35,77 @@
 
 <script>
 export default {
-  name: 'courses',
-  data () {
+  name: "courses",
+  data() {
     return {
       list: [
         {
-          course: 'MicroFrontend com SingleSPA',
-          img: require('../assets/img/courses/21.jpg')
+          course: "MicroFrontend com SingleSPA",
+          img: require("../assets/img/courses/21.jpg"),
         },
         {
-          course: 'ES6/7 / Webpack 2 / TypeScript',
-          img: require('../assets/img/courses/ts-01.jpg')
+          course: "ES6/7 / Webpack 2 / TypeScript",
+          img: require("../assets/img/courses/ts-01.jpg"),
         },
         {
-          course: 'Vuejs 3, Vuex e Vue Router',
-          img: require('../assets/img/courses/1.jpg')
+          course: "Vuejs 3, Vuex e Vue Router",
+          img: require("../assets/img/courses/1.jpg"),
         },
         {
-          course: 'Analytics para iniciantes',
-          img: require('../assets/img/courses/2.png')
+          course: "Analytics para iniciantes",
+          img: require("../assets/img/courses/2.png"),
         },
         {
-          course: 'Scrum',
-          img: require('../assets/img/courses/3.png')
+          course: "Scrum",
+          img: require("../assets/img/courses/3.png"),
         },
         {
-          course: 'Vuejs 2',
-          img: require('../assets/img/courses/4.jpg')
+          course: "Vuejs 2",
+          img: require("../assets/img/courses/4.jpg"),
         },
         {
-          course: 'Vuejs com PWA',
-          img: require('../assets/img/courses/5.jpg')
+          course: "Vuejs com PWA",
+          img: require("../assets/img/courses/5.jpg"),
         },
         {
-          course: 'Docker',
-          img: require('../assets/img/courses/6.png')
+          course: "Docker",
+          img: require("../assets/img/courses/6.png"),
         },
         {
-          course: 'Levantamento de requisitos',
-          img: require('../assets/img/courses/7.png')
+          course: "Levantamento de requisitos",
+          img: require("../assets/img/courses/7.png"),
         },
         {
-          course: 'Liderança',
-          img: require('../assets/img/courses/8.png')
+          course: "Liderança",
+          img: require("../assets/img/courses/8.png"),
         },
         {
-          course: 'HTML5 Web Storage',
-          img: require('../assets/img/courses/9.png')
+          course: "HTML5 Web Storage",
+          img: require("../assets/img/courses/9.png"),
         },
         {
-          course: 'HTML Básico',
-          img: require('../assets/img/courses/10.jpg')
+          course: "HTML Básico",
+          img: require("../assets/img/courses/10.jpg"),
         },
         {
-          course: 'CSS/Sass',
-          img: require('../assets/img/courses/11.jpg')
+          course: "CSS/Sass",
+          img: require("../assets/img/courses/11.jpg"),
         },
         {
-          course: 'Vuejs 01',
-          img: require('../assets/img/courses/12.jpg')
+          course: "Vuejs 01",
+          img: require("../assets/img/courses/12.jpg"),
         },
         {
-          course: 'Vuejs 02',
-          img: require('../assets/img/courses/13.jpg')
+          course: "Vuejs 02",
+          img: require("../assets/img/courses/13.jpg"),
         },
         {
-          course: 'Fundamentos do JavaScript',
-          img: require('../assets/img/courses/14.png')
+          course: "Fundamentos do JavaScript",
+          img: require("../assets/img/courses/14.png"),
         },
         {
-          course: 'Introdução ao JavaScript',
-          img: require('../assets/img/courses/15.png')
+          course: "Introdução ao JavaScript",
+          img: require("../assets/img/courses/15.png"),
         },
         // {
         //   course: 'O que é .NET',
@@ -130,13 +127,13 @@ export default {
         //   course: 'PHP iniciantes',
         //   img: require('../assets/img/courses/20.png')
         // }
-      ]
-    }
+      ],
+    };
   },
-}
+};
 </script>
 
-<style  lang="scss">
+<style lang="scss">
 $lightgrey: lightgrey;
 $blue-clear: rgb(7, 34, 63);
 $black: rgba(0, 0, 0, 0.2);
@@ -150,21 +147,19 @@ $color-default: rgb(7, 34, 63);
   font-size: 1rem;
 }
 
-
 .portfolio-container {
   padding: 30px;
   display: grid;
   column-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
   @media only screen and (max-width: 1200px) {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 .portfolio h2 {
   font-size: 2rem !important;
 }
-
 
 .portfolio {
   position: relative;
@@ -224,11 +219,11 @@ $color-default: rgb(7, 34, 63);
 
 .portfolio .portfolio-img img {
   position: relative;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transform: scale(1.1);
-  transition: .5s;
+  transition: 0.5s;
   @media only screen and (max-width: 1200px) {
     width: 100%;
   }
@@ -246,7 +241,7 @@ $color-default: rgb(7, 34, 63);
   display: flex;
   align-items: center;
   background: black;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
   @media only screen and (max-width: 1200px) {
     height: 100%;
   }
@@ -278,6 +273,4 @@ $color-default: rgb(7, 34, 63);
   box-shadow: inset 0 0 0 0 $color-default;
   border-color: $color-default;
 }
-
-
 </style>
