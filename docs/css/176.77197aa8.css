@@ -1,0 +1,1 @@
+.section-header h2{font-size:2rem!important}.videos{display:grid;grid-template-columns:1fr 1fr 1fr}@media only screen and (max-width:1200px){.videos{grid-template-columns:1fr}}.my-videos{padding-left:50px;padding-right:50px}@media only screen and (max-width:1200px){.my-videos{padding-left:20px;padding-right:20px}}

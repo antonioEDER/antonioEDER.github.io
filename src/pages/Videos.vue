@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md">
+  <div class="q-pa-md my-videos">
     <div class="section-header text-left">
       <h2 class="text-white text-bold">Meus videos</h2>
       <div class="text-white q-mb-lg">My videos</div>
@@ -55,6 +55,15 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   @media only screen and (max-width: 1200px) {
     grid-template-columns: 1fr;
+  }
+}
+
+.my-videos {
+  padding-left: 50px;
+  padding-right: 50px;
+  @media only screen and (max-width: 1200px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 </style>
