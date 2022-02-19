@@ -33,6 +33,15 @@ export default {
     return {
       videos: [
         {
+          url: "https://www.youtube.com/embed/3RM3qEFyGT0",
+          name: "#Resumão 02 - webpack",
+          name_english: "Summary webpack",
+          descript:
+            "Um resumão para você  ter  inspiração de iniciar seus estudos em webpack. No vídeo eu explico  os fundamentos e funcionamentos de uma projeto com webpack.",
+          descript_english:
+            "A summary for you to be inspired to start your studies in webpack. In the video I explain the fundamentals and workings of a webpack project.",
+        },
+        {
           url: "https://www.youtube.com/embed/RgL24KAOuzE",
           name: "#Resumão 01 - Criando um DevFolio com GitHub Pages",
           name_english: "Creating a DevFolio with GitHub Pages",
