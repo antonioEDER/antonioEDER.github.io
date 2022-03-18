@@ -40,6 +40,10 @@ export default {
     return {
       list: [
         {
+          course: "Google Firebase na Prática com JavaScript",
+          img: require("../assets/img/courses/22.jpg"),
+        },
+        {
           course: "MicroFrontend com SingleSPA",
           img: require("../assets/img/courses/21.jpg"),
         },
