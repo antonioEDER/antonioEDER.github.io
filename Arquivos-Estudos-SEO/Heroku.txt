@@ -9,4 +9,4 @@
 - git push heroku v2
 
 # URL do Site
-- https://cafe-com-seo.herokuapp.com/
+https://eder-antonio.herokuapp.com/
