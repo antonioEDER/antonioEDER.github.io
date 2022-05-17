@@ -21,6 +21,7 @@
     "@quasar/ssr-helpers": "^2.2.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "express": "^4.18.1",
     "pm2": "^5.2.0",
     "quasar": "2.6.6",
     "vue": "^3.0.0",
@@ -32,12 +33,12 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app": "^3.0.0",
+    "@quasar/app-webpack": "^3.0.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
     "eslint-webpack-plugin": "^2.4.0",
-    "prettier": "^2.5.1",
-    "@quasar/app-webpack": "^3.0.0"
+    "prettier": "^2.5.1"
   },
   "browserslist": [
     "last 10 Chrome versions",

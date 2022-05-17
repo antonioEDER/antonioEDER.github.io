@@ -6,7 +6,7 @@
 - https://devcenter.heroku.com/articles/heroku-cli
 - heroku login
 - heroku git:remote -a eder-antonio
-- git push heroku v2
+- git push heroku master
 
 # URL do Site
 https://eder-antonio.herokuapp.com/
