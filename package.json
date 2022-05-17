@@ -10,13 +10,19 @@
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev -m spa",
-    "build": "quasar build -m spa"
+    "build": "quasar build -m spa",
+    "dev:ssr": "quasar dev -m ssr",
+    "build:ssr": "quasar build -m ssr",
+    "pm2": "pm2-runtime processes.json --no-daemon",
+    "start": "node dist/ssr/index"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "@quasar/ssr-helpers": "^2.2.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
+    "pm2": "^5.2.0",
+    "quasar": "2.6.6",
     "vue": "^3.0.0",
     "vue-analytics": "^5.22.1",
     "vue-gtag": "^2.0.1",
@@ -30,7 +36,8 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
     "eslint-webpack-plugin": "^2.4.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "@quasar/app-webpack": "^3.0.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -46,6 +53,18 @@
   "engines": {
     "node": ">= 12.22.1",
     "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "yarn": ">= 1.21.1",
+    "pm2": "^5.2.0",
+    "axios": "0.21.4",
+    "core-js": "3.22.4",
+    "express": "4.0.0",
+    "quasar": "2.6.6",
+    "serve": "13.0.2",
+    "vue": "3.2.33",
+    "vue-router": "4.0.15",
+    "vuex": "4.0.2",
+    "compression": "^1.0.0",
+    "@quasar/ssr-helpers": "2.2.0",
+    "@quasar/babel-preset-app": "2.0.1"
   }
 }

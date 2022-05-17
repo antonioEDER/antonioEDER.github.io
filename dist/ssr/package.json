@@ -1,0 +1,56 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "author": "Eder Antonio <ederantonio@eucatur.com.br>",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@quasar/ssr-helpers": "2.2.0",
+    "axios": "0.21.4",
+    "core-js": "3.22.5",
+    "pm2": "5.2.0",
+    "quasar": "2.6.6",
+    "vue": "3.2.33",
+    "vue-analytics": "5.22.1",
+    "vue-gtag": "2.0.1",
+    "vue-router": "4.0.13",
+    "vuex": "4.0.2",
+    "compression": "^1.0.0",
+    "express": "^4.0.0",
+    "@quasar/babel-preset-app": "2.0.1"
+  },
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1",
+    "pm2": "^5.2.0",
+    "axios": "0.21.4",
+    "core-js": "3.22.4",
+    "express": "4.0.0",
+    "quasar": "2.6.6",
+    "serve": "13.0.2",
+    "vue": "3.2.33",
+    "vue-router": "4.0.15",
+    "vuex": "4.0.2",
+    "compression": "^1.0.0",
+    "@quasar/ssr-helpers": "2.2.0",
+    "@quasar/babel-preset-app": "2.0.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "quasar": {
+    "ssr": true
+  }
+}

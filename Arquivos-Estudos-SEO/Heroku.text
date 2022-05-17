@@ -1,0 +1,12 @@
+# Heroku
+- yarn build
+- yarn global add serve
+- serve -s build
+- heroku.com
+- https://devcenter.heroku.com/articles/heroku-cli
+- heroku login
+- heroku git:remote -a eder-antonio
+- git push heroku v2
+
+# URL do Site
+- https://cafe-com-seo.herokuapp.com/

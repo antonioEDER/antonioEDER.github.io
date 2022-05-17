@@ -1,0 +1,47 @@
+O que é SEO:
+- Search Engine Optimization (Otimizacao para mecanismo de Busca)
+
+Autoridade -> conteudo do site
+Popularidade -> site é famoso
+
+O que é Resultado Natural:
+- resulta sem ser pago
+
+O que é Resultado Organizo:
+- pago para destacar
+
+Buscadores:
+- Todo buscador é focado no usuário.
+- Para o site tem que buscar o equilibrio para o buscador e para o usuário.
+
+Indexar:
+- Operador site, o site esta presente no banco do buscador
+
+Rankear:
+- Ser bem posicionado após uma consulta
+- Os resultado são diferentes para cada usuario.
+
+Buscas avançadas:
+- Remover palavra chavar: exemp. velocidade do jaguar -animal ->(o - remove o animal da pesquisa)
+- Busca dentro do site: exemp. olimpiadas site uol.com.br
+- Buscar documentos: exemp filetype:pdf olimpiadas
+- Buscar por titulo: intitle: panela de pressão
+- Buscar por url: inurl:chocolate
+- Buscar por texto: intext:chocolate
+
+Otimizacao OnPage:
+- Conceitos ao conteudo X Programação.
+- Ajuda os robos a enteder o conteudo.
+
+SEO para Trafego:
+- vender anuncios (media kit, Google adSense) ter conteudo para atrair visitantes.
+
+SEO para Branding: 
+- Fica bem posicionado nas buscas. A marca deve aparecer em blogs, video, redes socias.
+   A Autoridade sobre o tema será percebida.
+
+SEO para Venda: 
+- Focar em palavras que grarm resultados. Cruzar dados co link patrocinado é vital.
+
+Analisar concorrentes:
+- Criar conta no Google ADS
