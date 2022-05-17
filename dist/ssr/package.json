@@ -19,6 +19,7 @@
     "vue-gtag": "2.0.1",
     "vue-router": "4.0.13",
     "vuex": "4.0.2",
+    "serve": "13.0.2",
     "compression": "^1.0.0",
     "@quasar/babel-preset-app": "2.0.1"
   },
