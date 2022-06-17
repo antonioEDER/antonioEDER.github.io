@@ -40,8 +40,12 @@ export default {
     return {
       list: [
         {
-          course: 'React Completo do básico ao avançado ',
-          img: require('../assets/img/courses/23.jpeg')
+          course: "Curso de SEO Completo - Do básico ao avançado",
+          img: require("../assets/img/courses/24.jpeg"),
+        },
+        {
+          course: "React Completo do básico ao avançado ",
+          img: require("../assets/img/courses/23.jpeg"),
         },
         {
           course: "Google Firebase na Prática com JavaScript",
