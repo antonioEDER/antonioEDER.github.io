@@ -1,18 +1,37 @@
 # Heroku
+
 - yarn build
+
 - yarn global add serve
+
 - serve -s build
+
 - heroku.com
+
 - https://devcenter.heroku.com/articles/heroku-cli
+
 - heroku login
+
 - heroku git:remote -a eder-antonio
+
 - git push heroku master
 
 # URL do Site
+
 https://eder-antonio.herokuapp.com/
 
 #heroku>projeto>settings>New Domain
+
 ederantonio.com.br
 
 heroku domains:add www.ederantonio.com.br
+Teve que adicionar um cartao
 
+https://eder-antonio.herokuapp.com -> https://ederantonio.com.br
+
+https://dash.cloudflare.com/
+-> type CNAME NAME ederantonio.com.br Contente eder-antonio.herokuapp.com
+-> CNAME www 
+
+https://registro.br/
+-> add dns ederantonio.com.br

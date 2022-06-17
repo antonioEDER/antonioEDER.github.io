@@ -7,7 +7,7 @@ Popularidade -> site é famoso
 O que é Resultado Natural:
 - resulta sem ser pago
 
-O que é Resultado Organizo:
+O que é Resultado Organico:
 - pago para destacar
 
 Buscadores:
@@ -45,3 +45,7 @@ SEO para Venda:
 
 Analisar concorrentes:
 - Criar conta no Google ADS
+
+Google ADS para lançar companhas nos buscadores
+https://ads.google.com/
+
